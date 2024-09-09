@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+}
+
+.game {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 440px;
+    height: 440px;
+    
+}
+
+.grid div {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    color: rgba(255, 255, 255, 0);
+}
+
+#result {
+    visibility: hidden;
+}
+
+#result.active {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: #111;
+    top: 0;
+    color: #fff;
+    visibility: visible; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    z-index: 1;
+}
